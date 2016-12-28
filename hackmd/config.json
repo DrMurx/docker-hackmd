@@ -1,6 +1,7 @@
 {
     "production": {
         "urladdport": true,
+        "urlpath": "hackmd",
         "email": true,
         "db": {
             "username": "hackmd",

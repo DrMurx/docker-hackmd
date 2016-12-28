@@ -1,6 +1,6 @@
 module.exports = {
     domain: '', // domain name
-    urlpath: '', // sub url path, like: www.example.com/<urlpath>
+    urlpath: 'hackmd', // sub url path, like: www.example.com/<urlpath>
 
     // settings
     debug: false,
