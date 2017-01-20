@@ -1,13 +1,13 @@
 FROM node:6.9-alpine
 
-ARG VERSION=master
+ARG VERSION=gracefulSigtermHandling
 
 # Add files
 ADD config.js config.json .sequelizerc /files/
 
 RUN apk add --no-cache build-base alpine-sdk python git && \
 #   Add Source
-    git clone https://github.com/hackmdio/hackmd.git -b $VERSION /hackmd && \
+    git clone https://github.com/DrMurx/hackmd.git -b $VERSION /hackmd && \
     cd /hackmd && \
     rm -f /hackmd/public/js/config.js && ln -s /files/config.js /hackmd/public/js/config.js && \
     rm -f /hackmd/config.json && ln -s /files/config.json /hackmd/config.json && \
